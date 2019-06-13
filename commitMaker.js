@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 const numberOfCommits = process.argv[2];
 
 const addCommit = commitNumber => {
-  exec(`echo ${commitNumber} > logger; git add .; git commit -m "Commit #${commitNumber} --allow-empty"`, function(
+  exec(`echo ${commitNumber} > logger; git add .; git commit -m "Commit #${commitNumber}"`, function(
     error,
     stdout,
     stderr

@@ -15,7 +15,7 @@ const addCommit = commitNumber => {
 };
 
 const addCommits = numberOfCommits => {
-  for (let i = 1; i <= numberOfCommits; i++) {
+  for (let i = 80; i <= 80 + numberOfCommits; i++) {
     addCommit(i);
   }
 };

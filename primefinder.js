@@ -8,7 +8,7 @@ const isPrime = number => {
 const primeFinder = numberOfPrimes => {
   const primes = [];
   for (let i = 2; primes.length < numberOfPrimes; i++) {
-    if (isPrime(i)) primes.push(i);
+    if (isPrime(2)) primes.push(i);
   }
   return primes;
 };

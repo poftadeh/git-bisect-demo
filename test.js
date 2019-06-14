@@ -7,4 +7,14 @@ console.log(firsTenPrimes);
 
 const comparePrimeArrays = result.every(prime => firsTenPrimes.includes(prime));
 
-console.log(comparePrimeArrays ? 'The arrays match!' : 'The arrays do not match. Something is broken');
+console.log(
+  comparePrimeArrays
+    ? 'The arrays match!'
+    : 'The arrays do not match. Something is broken'
+);
+
+if (comparePrimeArrays === true) {
+  process.exit(0);
+} else {
+  process.exit(1);
+}
